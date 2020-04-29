@@ -100,3 +100,37 @@ class Takoyaki {
 var takoyaki = Takoyaki()
 takoyaki.guzai = "いか"
 takoyaki.sayGuzai()
+
+
+
+
+
+class Car {
+    var distance = 100
+    func stop(){
+        print("残り\(distance)kmのところで止まりました")
+    }
+}
+
+class SportsCar: Car{
+    func drive() {
+        distance -= 10
+    }
+}
+
+class Bike: Car{
+    func drive() {
+        distance -= 2
+    }
+}
+
+var sc = SportsCar()
+var bk = Bike()
+
+sc.stop()
+bk.stop()
+sc.drive()
+bk.drive()
+bk.drive()
+sc.stop()
+bk.stop()
