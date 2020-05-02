@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="WJV-6u-gm8">
+                                <rect key="frame" x="0.0" y="44" width="375" height="641"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-f5-3zb">
+                                <rect key="frame" x="0.0" y="685" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Jf4-Cg-TEW"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="Gm9-kd-eK3">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="Hj2-t0-ZYw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" id="F2t-CT-5sb"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1fa-f5-3zb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GFm-0n-s5P"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="bottom" secondItem="1fa-f5-3zb" secondAttribute="top" symbolic="YES" id="QWo-SX-zdn"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="trailing" secondItem="1fa-f5-3zb" secondAttribute="trailing" id="V3B-hF-CeF"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bJj-HU-9dO"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="leading" secondItem="1fa-f5-3zb" secondAttribute="leading" id="dM2-kA-csO"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kTa-em-sfJ"/>
+                            <constraint firstItem="WJV-6u-gm8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrQ-Lh-zOm"/>
+                            <constraint firstItem="1fa-f5-3zb" firstAttribute="top" secondItem="WJV-6u-gm8" secondAttribute="bottom" id="qdl-xr-mPe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="WJV-6u-gm8" id="TDa-5v-AOC"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.673913043478265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="593.33331298828125" height="896"/>
+    </resources>
+</document>
