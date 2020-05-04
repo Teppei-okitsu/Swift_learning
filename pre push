@@ -1,0 +1,5 @@
+$ ssh-add /Users/okitsu/.ssh/id_rsa_github_learning
+Identity added: /Users/okitsu/.ssh/id_rsa_github_learning (okitsu@h2017192.local)
+h2017192:Swift_learning okitsu$ ssh-add -l
+2048 SHA256:f78Y/Bkfyr/Cf66aL9kgAhaI3a+lOJjZzmIsQXt8pes okitsu.teppei@heartsoft.co.jp (RSA)
+4096 SHA256:GLt1Awm4g137/GP9I/ObusBtp6GO0INo3lDMliu4Q7A okitsu@h2017192.local (RSA)
