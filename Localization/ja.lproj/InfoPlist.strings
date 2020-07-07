@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Localization
+
+  Created by okitsu teppei on 2020/05/05.
+  Copyright © 2020 okitsu teppei. All rights reserved.
+*/
+
+CFBundleDisplayName = "日本語アプリ";
