@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tappedToSubView(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "SubView", bundle: nil)
+        let subVC = storyBoard.instantiateViewController(withIdentifier: "SubVC")
+        AppDelegate.shared.window?.present(subVC)
+    }
+    
 }
 
