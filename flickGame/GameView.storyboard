@@ -20,17 +20,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="もんだい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-Qo-y54">
+                                <rect key="frame" x="20" y="202" width="374" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="p4d-Fa-VsT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="IJE-Qo-y54" firstAttribute="top" secondItem="87N-d7-rrf" secondAttribute="top" constant="158" id="1k7-cn-NXD"/>
+                            <constraint firstItem="IJE-Qo-y54" firstAttribute="trailing" secondItem="NeV-AC-a3h" secondAttribute="trailing" id="Azd-qB-RaL"/>
                             <constraint firstItem="NeV-AC-a3h" firstAttribute="trailing" secondItem="Fye-vM-POh" secondAttribute="trailingMargin" id="FWb-98-AW8"/>
                             <constraint firstItem="NeV-AC-a3h" firstAttribute="centerY" secondItem="Fye-vM-POh" secondAttribute="centerY" id="UsX-fS-7S8"/>
                             <constraint firstItem="NeV-AC-a3h" firstAttribute="leading" secondItem="Fye-vM-POh" secondAttribute="leadingMargin" id="xQe-Dz-Jdj"/>
+                            <constraint firstItem="IJE-Qo-y54" firstAttribute="leading" secondItem="NeV-AC-a3h" secondAttribute="leading" id="zFH-UB-8OV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="87N-d7-rrf"/>
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="NeV-AC-a3h" id="O47-rT-AqF"/>
+                        <outlet property="quizLabel" destination="IJE-Qo-y54" id="3MI-eH-mjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05O-LH-GCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
