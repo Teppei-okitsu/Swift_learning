@@ -42,13 +42,42 @@
                         <viewLayoutGuide key="safeArea" id="87N-d7-rrf"/>
                     </view>
                     <connections>
-                        <outlet property="inputTextField" destination="NeV-AC-a3h" id="O47-rT-AqF"/>
+                        <outlet property="inputTextField" destination="NeV-AC-a3h" id="ayw-75-7Zc"/>
                         <outlet property="quizLabel" destination="IJE-Qo-y54" id="3MI-eH-mjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05O-LH-GCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="-202.23214285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I2b-gC-R5o">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLh-fx-MSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="TimeUpView" id="4en-Oo-1o9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXv-i5-CO9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="タイムアップ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-K5-2iB">
+                                <rect key="frame" x="20" y="353" width="374" height="191"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wdV-K5-2iB" firstAttribute="leading" secondItem="WXv-i5-CO9" secondAttribute="leadingMargin" id="TUk-W9-4nK"/>
+                            <constraint firstItem="wdV-K5-2iB" firstAttribute="top" secondItem="7Fn-Ul-4ie" secondAttribute="top" constant="309" id="WgU-gD-93q"/>
+                            <constraint firstItem="wdV-K5-2iB" firstAttribute="centerY" secondItem="WXv-i5-CO9" secondAttribute="centerY" id="g7D-MN-Se0"/>
+                            <constraint firstItem="wdV-K5-2iB" firstAttribute="trailing" secondItem="WXv-i5-CO9" secondAttribute="trailingMargin" id="gel-zB-C29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Fn-Ul-4ie"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="-202.23214285714286"/>
         </scene>
     </scenes>
 </document>
