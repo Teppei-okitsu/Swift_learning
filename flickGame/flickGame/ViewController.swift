@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func tappedEasy(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "GameView", bundle: nil)
+        let GameVC = storyboard.instantiateViewController(withIdentifier: "GameView")
+        GameVC.modalPresentationStyle = .fullScreen
+        self.present(GameVC, animated: true, completion: nil)
+    }
 }
 
